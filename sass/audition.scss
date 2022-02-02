@@ -1,3 +1,55 @@
 // Bootstrap
 @import "vendor/bootstrap/scss/bootstrap.scss";
 
+.cta-box {
+  font-family: 'Mulish', sans-serif;
+
+  .cta-text {
+    h4 {
+      font-size: 0.875rem;
+    }
+    .cta-text-desktop {
+      .warning {
+        width: 2rem;
+        height: 2rem;
+        background: #ff9d63;
+        border-radius: 4px;
+        margin-right: 0.5rem;
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+
+      a {
+        margin: 0 0.25rem;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+    .cta-text-mobile {
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 1.5rem;
+      }
+      @include media-breakpoint-down(sm) {
+        max-width: 20rem;
+      }
+    }
+  }
+  .cta-actions {
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+    button {
+      flex: 1;
+      margin: 0 0.5rem;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin: 0.25rem 0;
+        max-width: 20rem;
+      }
+    }
+  }
+}

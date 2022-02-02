@@ -9123,3 +9123,63 @@ a.text-dark:focus {
   }
 }
 
+.cta-box {
+  font-family: "Mulish", sans-serif;
+}
+
+.cta-box .cta-text h4 {
+  font-size: 0.875rem;
+}
+
+.cta-box .cta-text .cta-text-desktop .warning {
+  width: 2rem;
+  height: 2rem;
+  background: #ff9d63;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.cta-box .cta-text .cta-text-desktop .warning svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.cta-box .cta-text .cta-text-desktop a {
+  margin: 0 0.25rem;
+}
+
+.cta-box .cta-text .cta-text-desktop h4 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199.98px) {
+  .cta-box .cta-text .cta-text-mobile {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cta-box .cta-text .cta-text-mobile {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cta-box .cta-actions {
+    flex-direction: column;
+  }
+}
+
+.cta-box .cta-actions button {
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .cta-box .cta-actions button {
+    width: 100%;
+    margin: 0.25rem 0;
+    max-width: 20rem;
+  }
+}
+
